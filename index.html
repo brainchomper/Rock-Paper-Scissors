@@ -10,7 +10,7 @@
 	<script src="./assets/js/jquery-3.3.1.min.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<title>Rock Papaer Scissors</title>
+	<title>Rock Paper Scissors</title>
 </head>
 
 <body onload="getYear()">
@@ -45,7 +45,101 @@
 		<!--/.container-fluid -->
 	</nav>
 	<content class="container-fluid mainGame">
+		<!-- enter name row -->
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<form id="name-form">
+							<input type="text" id="name-input" placeholder="Your Name">
+							<p></p>
+							<input id="add-name" type="submit" value="Submit">
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+		<!-- / name row -->
 
+		<!-- game row -->
+		<!-- p1panel -->
+		<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-default" id="playerPanel1">
+				<div class="panel-heading">
+					<h3 class="panel-title text-center panelOption" id="player1name">Player 1</h3>
+				</div>
+				<div class="panel-body">
+					<div class="panel-body text-center panelOption">
+						Rock
+					</div>
+					<div class="panel-body text-center panelOption">
+						Paper
+					</div>
+					<div class="panel-body text-center">
+						Scissors
+					</div>
+					<div class="panel-body text-center" id="player1Stats">
+						stats
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- game panel -->
+		<div class="col-md-4">
+			<div class="panel panel-default gamePanel">
+				<h3 class="panel-title text-center" id="waitingNotice"></h3>
+				<h3 class="panel-title text-center" id="outcome">Rock-Paper-Scissors</h3>
+			</div>
+		</div>
+		<!-- p2 panel -->
+		<div class="col-md-4">
+				<div class="panel panel-default" id="playerPanel2">
+					<div class="panel-heading">
+						<h3 class="panel-title text-center" id="player2Name">Player 2</h3>
+					</div>
+					<div class="panel-body">
+						<div class="panel-body text-center panelOption">
+							Rock
+						</div>
+						<div class="panel-body text-center panelOption">
+							Paper
+						</div>
+						<div class="panel-body text-center panelOption">
+							Scissors
+						</div>
+						<div class="panel-body text-center" id="player2Stats">
+							stats
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /game row -->
+
+			    <!-- Chat Section -->
+					<div class="row">
+
+							<div class="col-md-8">
+								<div id="chatDisplay"></div>
+							</div>
+			
+							<div class="col-md-4"> 
+								<div class="chatInput">
+									<div class="chatLabel">Type Your Message!</div>
+			
+								<div class="chatPanel"> 
+									<form id="chat-form">
+										<textarea type="text" id="chat-input"></textarea>
+										<input id="chat-send" type="submit" value="Send">
+									</form>
+								</div>
+							</div>
+								</div> <!-- End Player Name Section  -->
+			
+						</div> <!-- End Chat Section  -->
 
 		<!-- end fluid container -->
 	</content>
