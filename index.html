@@ -52,10 +52,13 @@
 				<div class="panel panel-default">
 					<div class="panel-body">
 						<form id="name-form">
-							<input type="text" id="name-input" placeholder="Your Name">
+							<input type="text" id="name-input" placeholder="Your Name" class="form-control">
 							<p></p>
-							<input id="add-name" type="submit" value="Submit">
+							
+							<input id="addName" type="submit" class="btn btn-primary btn-lg btn-block" value="Submit">
 						</form>
+						<h3 class="panel-title text-center waiting" id="waitingNotice"></h3>
+				<h3 class="panel-title text-center" id="outcome">Rock-Paper-Scissors</h3>
 					</div>
 				</div>
 			</div>
@@ -66,19 +69,23 @@
 		<!-- game row -->
 		<!-- p1panel -->
 		<div class="row">
-		<div class="col-md-4">
+			<div class="col-xs-1"></div>
+		<div class="col-xs-5">
 			<div class="panel panel-default" id="playerPanel1">
 				<div class="panel-heading">
 					<h3 class="panel-title text-center" id="player1name">Player 1</h3>
 				</div>
 				<div class="panel-body">
 					<div class="panel-body text-center panelOption">
+						<img src="./assets/images/rock.png" alt="Rock">
 						Rock
 					</div>
 					<div class="panel-body text-center panelOption">
+						<img src="./assets/images/paper.png" alt="Paper">
 						Paper
 					</div>
 					<div class="panel-body text-center panelOption">
+						<img src="./assets/images/scissors.png" alt="Scissors">
 						Scissors
 					</div>
 					<div class="panel-body text-center" id="player1Stats">
@@ -87,27 +94,24 @@
 				</div>
 			</div>
 		</div>
-		<!-- game panel -->
-		<div class="col-md-4">
-			<div class="panel panel-default gamePanel">
-				<h3 class="panel-title text-center waiting" id="waitingNotice"></h3>
-				<h3 class="panel-title text-center" id="outcome">Rock-Paper-Scissors</h3>
-			</div>
-		</div>
+
 		<!-- p2 panel -->
-		<div class="col-md-4">
+		<div class="col-xs-5">
 				<div class="panel panel-default" id="playerPanel2">
 					<div class="panel-heading">
 						<h3 class="panel-title text-center" id="player2Name">Player 2</h3>
 					</div>
 					<div class="panel-body">
 						<div class="panel-body text-center panelOption">
+							<img src="./assets/images/rock.png" alt="Rock">
 							Rock
 						</div>
 						<div class="panel-body text-center panelOption">
+							<img src="./assets/images/paper.png" alt="Paper">
 							Paper
 						</div>
 						<div class="panel-body text-center panelOption">
+							<img src="./assets/images/scissors.png" alt="Scissors">
 							Scissors
 						</div>
 						<div class="panel-body text-center" id="player2Stats">
@@ -116,31 +120,43 @@
 					</div>
 				</div>
 			</div>
+			<div class="col-xs-1"></div>
 		</div>
 		<!-- /game row -->
-
-			    <!-- Chat Section -->
-					<div class="row">
-
-							<div class="col-md-8">
-								<div id="chatDisplay"></div>
-							</div>
-			
-							<div class="col-md-4"> 
-								<div class="chatInput">
-									<div class="chatLabel">Type Your Message!</div>
-			
-								<div class="chatPanel"> 
-									<form id="chat-form">
-										<textarea type="text" id="chat-input"></textarea>
-										<input id="chat-send" type="submit" value="Send">
-									</form>
-								</div>
-							</div>
-								</div> <!-- End Player Name Section  -->
-			
-						</div> <!-- End Chat Section  -->
-
+		<!-- game panel -->
+		<div class="row">
+		<div class="col-xs-1"></div>
+		<div class="col-xs-10">
+				<div class="panel panel-default gamePanel">
+					
+											<!-- Chat Section -->
+											<div class="row chatroom">
+	
+												<div class="col-xs-7">
+													<div id="chatDisplay"></div>
+												</div>
+								
+												<div class="col-xs-5"> 
+													<div class="chatInput">
+														<div class="chatLabel">Type Your Message!</div>
+								
+													<div class="chatPanel"> 
+														<form id="chat-form">
+																<textarea class="form-control" id="chat-input" rows="2"></textarea>
+																<p></p>
+															<!-- <textarea type="text" id="chat-input"></textarea> -->
+															<input id="chat-send" class="btn btn-primary btn-lg btn-block" type="submit" value="Send">
+														</form>
+													</div>
+												</div>
+													</div> <!-- End Player Name Section  -->
+								
+											</div> <!-- End Chat Section  -->
+	
+				</div>
+			</div>
+<div class="col-xs-1"></div>
+		</div>
 		<!-- end fluid container -->
 	</content>
 	<footer>

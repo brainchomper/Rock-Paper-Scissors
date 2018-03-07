@@ -182,7 +182,7 @@ database.ref("/outcome/").on("value", function(snapshot) {
 */
 
 // Attach an event handler to the "Submit" button to add a new user to the database
-$("#add-name").on("click", function(event) {
+$("#addName").on("click", function(event) {
 	event.preventDefault();
 
 	// First, make sure that the name field is non-empty and we are still waiting for a player
