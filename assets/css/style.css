@@ -25,6 +25,12 @@ body{
 	height: 100%;
 	height: 100%;
 }
+.gamePanel{
+	padding: 20px;
+}
+.chatroom{
+	border: 2px solid steelblue;
+}
 .panelOption:hover{
 	background-color: steelblue;
 	color: whitesmoke;
@@ -40,6 +46,12 @@ color: purple;
 }
 .chatColorDisconnected{
 	color: red;
+}
+.waiting{
+	color: red;
+}
+.playerWaiting{
+	border: 5px solid red;
 }
 .chatColorJoined{
 	color: green;
