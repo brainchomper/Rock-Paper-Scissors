@@ -25,6 +25,25 @@ body{
 	height: 100%;
 	height: 100%;
 }
+.panelOption:hover{
+	background-color: steelblue;
+	color: whitesmoke;
+}
+.playerPanelTurn{
+	border: 5px solid green; 
+}
+.chatColor1{
+	color: dodgerblue;
+}
+.chatColor2{
+color: purple;
+}
+.chatColorDisconnected{
+	color: red;
+}
+.chatColorJoined{
+	color: green;
+}
 footer {
 	padding: 10px 0px 0px 0px;
 	text-align: center;
